@@ -18,7 +18,8 @@ print(results)
 
 final_result = results.y[:,-1]
 end_time = results.t[-1]
-print(system.run_system(end_time, final_result))
+print(end_time)
+print(final_results)
 
 if results.success:
     save_results("./results.csv", results.t, results.y)
